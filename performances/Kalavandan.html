@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>VanillaScroll</title>
+	<link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+	<div class="container">
+		<div class="pages">
+		<ul>
+			<li class="logo"><a href="../index.html"><img src='../logo.png', style="width:75%"></img></a></li>
+			<li class="links"><a href="../Institute.html">Institute</a></li>
+			<li class="links"><a href="../students.html">Students</a></li>
+			<li class="links"><a href="../performances.html">Performances</a></li>
+			<li class="links"><a href="../notable.html">Notable</a></li>
+			<li class="links"><a href="../profile.html">Mrinalini Arkatkar</a></li>
+			
+		</ul>
+		</div>
+			<img src='../thinstage.png' style="width:100%;" class="parallax"></img>
+			<img src='../bannerfade.png' style="width:100%" class="microphone"></img>
+			<img src='../bigstagefade.png' style="width:100%" class="parallax2"></img>
+			<img src='../micromacrofade.png' style="width:100%" class="parallax3"></img>
+			<h1 class="entry_title">Kalavandan</h1>
+			<p class="scrolltext">About Hour and half long performance, with “Baada Khayal, Layakari,  Druta Taal, and Taana”, followed by several semi-classical presentation.</p>
+			
+			<p class="scrolltext">
+			Nili Modi,  2018 
+			<br></br>
+			<img src="Nili Modi-1.png" style="width:60%" class="image"></img>
+			<img src="Nili Modi-2.png" style="width:60%" class="image"></img>
+			<br></br>
+			</p>
+			
+			<p class="scrolltext">
+			Vedika Aigalikar,  2017 
+			<br></br>
+			<img src="k1.jpg" style="width:60%" class="image"></img>
+			<img src="k2.jpg" style="width:60%" class="image"></img>
+			<br></br>
+			</p>
+			<p class="scrolltext">
+			Asavari Rajpurkar,  2016
+			<br></br>
+			<img src="k3.jpg" style="width:60%" class="image"></img>
+			<img src="k4.jpg" style="width:60%" class="image"></img>
+			<br></br>
+			</p>
+			<p class="scrolltext">
+			Lopa Rana,  2016
+			<br></br>
+			<img src="k5.jpg" style="width:60%" class="image"></img>
+			<img src="k6.jpg" style="width:60%" class="image"></img>
+			<img src="k7.jpg" style="width:60%" class="image"></img>
+			<br></br>
+			</p>
+			<p class="scrolltext">
+			Richa Vakil,  2015
+			<br></br>
+			<img src="k8.jpg" style="width:60%" class="image"></img>
+			<br></br>
+			</p>
+			<p class="scrolltext">
+			Meera Modi, 2014
+			<br></br>
+			<img src="k9.png" style="width:60%" class="image"></img>
+			<br></br>
+			</p>
+			<p class="scrolltext">
+			Bhakti Patil, 2014
+			<br></br>
+			<img src="k10.jpg" style="width:60%" class="image"></img>
+			<br></br>
+			</p>
+			<p class="scrolltext">
+			Shweta Pandya, 2013
+			<br></br>
+			<img src="k11.png" style="width:60%" class="image"></img>
+			<br></br>
+			</p>
+			<p class="scrolltext">
+			Shivani Rami (Institute’s first Kalavandan at Country Day Auditorium)
+			<br></br>
+			<img src="k12.png" style="width:60%" class="image"></img>
+			<br></br>
+			
+	</div>
+	
+	<script>
+		window.addEventListener('scroll', function(e) {
+		
+			const target = document.querySelector('.parallax');
+			const port = document.querySelector('.entry_title');
+			const target2 = document.querySelector('.parallax2');
+			const target3 = document.querySelector('.microphone');
+			const target4 = document.querySelector('.parallax3');
+			
+			var scrolled = window.pageYOffset;
+			var rate = scrolled * 0.6;
+			var port_rate = -0.25;
+			
+			target.style.transform = 'translate3d(0px,'+rate+'px, 0px)';
+			target2.style.transform = 'translate3d(0px,'+rate+'px, 0px)';
+			target3.style.transform = 'translate3d(0px,'+rate+'px, 0px)';
+			target4.style.transform = 'translate3d(0px,'+rate+'px, 0px)';
+			port.style.transform = 'translate3d(0px,'+port_rate+'px, 0px)';
+		
+		});
+		
+	
+	
+	</script>
+
+</body>
+</html>

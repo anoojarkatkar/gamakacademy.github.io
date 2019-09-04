@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>VanillaScroll</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="container">
+		<div class="pages">
+		<ul>
+			<li class="logo"><a href="index.html"><img src='logo.png', style="width:75%"></img></a></li>
+			<li class="links"><a href="Institute.html">Institute</a></li>
+			<li class="links"><a href="students.html">Students</a></li>
+			<li class="links"><a href="performances.html">Performances</a></li>
+			<li class="links"><a href="notable.html">Notable</a></li>
+			<li class="links"><a href="profile.html">Mrinalini Arkatkar</a></li>
+			
+		</ul>
+		</div>
+			<img src='ThinStage.png' style="width:100%;", class="parallax"></img>
+			<img src='ganpati1fade.png', style="width:100%", class="microphone"></img>
+			<h1 class="entry_title">Notable</h1>
+			
+			<p class="scrolltext">
+			Mrinalini’s service to the community and The Bhartiya Temple of Troy was recognized by the Temple in 2014 with a special presentation. 
+			<br></br>
+			<img src="css/TroyTemple.jpg" style="width:75%" class="image"></img>
+			<br></br>
+			MiIndia.com had arranged a Teacher-Appreciation day in Januarry 2015. Receiving appreciation plaque from former MP Laxmi Prasad Yarlagadda.
+			<br></br>
+			<img src="css/miindia.gif" style="width:75%" class="image"></img>
+			</p>
+		</div>
+	
+	<script>
+		window.addEventListener('scroll', function(e) {
+		
+			const target = document.querySelector('.parallax');
+			const port = document.querySelector('.entry_title');
+			const target2 = document.querySelector('.microphone');
+			
+			var scrolled = window.pageYOffset;
+			var rate = scrolled * 0.5;
+			var port_rate = rate * -0.5
+			
+			target.style.transform = 'translate3d(0px,'+rate+'px, 0px)';
+			target2.style.transform = 'translate3d(0px,'+rate+'px, 0px)';
+			port.style.transform = 'translate3d(0px,'+port_rate+'px, 0px)';
+		
+		});
+		
+	
+	
+	</script>
+
+</body>
+</html>
