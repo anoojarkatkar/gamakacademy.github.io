@@ -163,6 +163,12 @@ a{
 	z-index:0;
 }
 
+.image_recital{
+	position:relative;
+	left:50%;
+	transform:translate(-50%,0);
+}
+
 @media (orientation:portrait){
 	.parallax{
 		position:absolute;
